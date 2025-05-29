@@ -19,7 +19,7 @@ class Config(object):
     ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
 
     # channels logs
-    FORCE_SUBS   = os.environ.get("FORCE_SUBS", "") 
+    FORCE_SUBS   = os.environ.get("FORCE_SUBS", "usefull_botz") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002652028144"))
 
     # wes response configuration     
